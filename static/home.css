@@ -1,0 +1,17 @@
+div.btn-list{
+    text-align: center;
+}
+
+div.btn-list a.btn{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #333333;
+    border-radius: 5em;
+}
+
+div.btn-list a.btn:hover {
+    background-color: #222222;
+}

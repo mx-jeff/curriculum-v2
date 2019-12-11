@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/estudos.css')}}">
+{% endblock %}
+
+{% block headtitle %}
+    Curriculum
+{% endblock%}
+
+{% block body %}
+    <header class="name">
+        <h1>Formação acadêmica</h1>
+    </header>
+
+    <section>
+        <table>
+            <tr>
+                <th>Segurança da informação</th>
+                <th>Aprendiz adminstrativo</th>
+                <th>Ensino médio</th>
+                <th>Ingles intermediário</th>
+            </tr>
+    
+            <tr>
+                <td><strong>Instituiçao:</strong> UNINOVE</td>
+                <td><strong>Instituiçao:</strong> SODIPROM</td>
+                <td><strong>Instituiçao:</strong> Amadeu Odorico de Sousa</td>
+                <td><strong>Instituiçao:</strong> Microcamp Diadema</td>
+            </tr>
+
+            <tr>
+                <td><strong>Data:</strong> 03/2017 até 07/2019</td>
+                <td><strong>Data:</strong> 08/2013 a 12/2013</td>
+                <td><strong>Data:</strong> 02/2008 até 12/2015</td>
+                <td><strong>Data:</strong> 03/2012 até 12/2013</td>
+            </tr>
+        </table>
+    </section>
+
+    <h2>Cursos complementares - Microcamp</h2>
+
+    <section>
+
+        <table>
+            <tr>
+                <th>Web Design</th>
+                <th>Espanhol basíco</th>
+                <th>Criação de Jogos</th>
+            </tr>
+
+            <tr>
+                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
+                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
+                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
+            </tr>
+        </table>
+    </section>
+
+    <h2>Sololearn</h2>
+
+    <section>
+        <table>
+            <tr>
+                <th>Curso tutorial Javascript </th>
+                <th>Curso de Python</th>
+                <th>Tutorial PHP</th>
+                <th>Tutorial SQL</th>
+            </tr>
+
+            <tr>
+                <td><strong>formação:</strong> 29/04/2019</td>
+                <td><strong>formação:</strong> 10/03/2019</td>
+                <td><strong>formação:</strong> 29/03/2019</td>
+                <td><strong>formação:</strong> 24/04/2019</td>
+            </tr>
+        </table>
+    </section>
+{% endblock%}

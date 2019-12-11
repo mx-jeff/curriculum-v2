@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/home.css')}}">
+{% endblock %}
+
+{% block headtitle %}
+    Curriculum
+{% endblock%}
+
+{% block body %}
+    <header class="name">
+        <h1>Jeferson Morais</h1>
+    </header>
+
+    <section>
+        <article>
+            <p>Olá meu nome é Jeferson Morais, tenho {{data['idade']}} anos, atualmente sou estudante, formado em Segurança da informação,
+            utilizando tecnologias em front-end e back-end, como Python, PHP, NodeJs para varios projetos pessoais e acadêmicos.
+            </p>
+        </article>
+    </section>
+
+    <div class="btn-list">
+        <a class="btn" href="{{url_for('estudos')}}">Formação Acadêmica</a>
+        <a class="btn" href="{{url_for('jobs')}}">Experiência profissional</a>
+        <a class="btn" href="{{url_for('social')}}">Redes Sociais</a>
+        <a class="btn" href="{{url_for('chat')}}">Contato</a>
+    </div>
+{% endblock%}

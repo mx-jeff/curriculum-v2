@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+:root{
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-name: 'Permanent Marker', cursive;
+
+    --bg-primary: #333333;
+    --bg-secondary: rgb(40, 40, 40);
+    
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: var(--bg-secondary);
+    font-family: var(--font-secondary);
+}
+
+nav{
+    background: var(--bg-primary);
+    padding: 10px 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: var(--font-primary);
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Header title*/
+
+.name {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    color: black;
+    padding: 15px 30px;
+}
+
+.name h1{
+    text-align: center;
+    font-family: var(--font-name);
+    color: white;
+    font-size: 32pt;
+    letter-spacing: 10px;
+}
+
+/*Section*/
+section{
+   width: calc(100% - 25%);
+   margin: 0 auto 50px auto;
+}
+
+/*Article*/
+
+section article{
+    font-family: var(--font-secondary);
+}
+
+section article p {
+    line-height: 30px;
+    text-align: justify;
+}
