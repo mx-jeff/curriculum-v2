@@ -108,6 +108,11 @@ section article p {
 }
 
 .box-container .box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
     width: 32px;
     height: 32px;
 }
@@ -121,4 +126,17 @@ section article p {
 
 .box-container .box .info {
     padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container .box .info a {
+    margin: 5px auto;
+    text-decoration: none;
+    color: white;
+}
+
+.box-container .box .info a:hover {
+    text-decoration: underline;
+    color: white;
 }
