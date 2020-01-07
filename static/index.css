@@ -18,6 +18,37 @@ section {
     justify-content: center;
 }
 
+
+
+#microcamp-courses {
+    display: none;
+}
+
+#sololearn-courses {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2#microcamp, h2#solo{
+    text-decoration: none;
+}
+
+h2#solo:hover, h2#microcamp:hover{
+    text-decoration: underline;
+}
+
+h2 a {
+    color: white;
+    text-decoration: underline;
+}
+
+h2 a:hover {
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -100,7 +131,7 @@ section article p {
 
 .box-container .box {
     margin: 20px;
-    min-width: 100px;
+    max-width: 300px;
     min-height: 50px;
 
     background-color: #242323;
@@ -122,12 +153,17 @@ section article p {
     margin: 0;
     padding: 10px;
     background-color: #191919;
+    box-sizing: border-box;
 }
 
 .box-container .box .info {
-    padding: 10px 20px;
+    padding: 20px 20px 10px 20px;
     display: flex;
     flex-direction: column;
+}
+
+.box-container .box .info strong{
+    text-align: left;
 }
 
 .box-container .box .info a {

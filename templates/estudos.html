@@ -2,7 +2,6 @@
 
 {% block css %}
     <link rel="stylesheet" href="{{url_for('static', filename='../static/index.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='../static/estudos.css')}}">
 {% endblock %}
 
 {% block headtitle %}
@@ -15,66 +14,144 @@
     </header>
 
     <section>
-        <table>
-            <tr>
-                <th>Segurança da informação</th>
-                <th>Aprendiz adminstrativo</th>
-                <th>Ensino médio</th>
-                <th>Ingles intermediário</th>
-            </tr>
+        <div class="box-container">
+            <div class="box">
+                <h2>Segurança da informação</h2>
+
+                <div class="info">
+                    <strong>Instituiçao:</strong> 
+                    <p>UNINOVE</p>
+                    <strong>Data:</strong> 
+                    <p>03/2017 até 07/2019</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Aprendiz adminstrativo</h2>
     
-            <tr>
-                <td><strong>Instituiçao:</strong> UNINOVE</td>
-                <td><strong>Instituiçao:</strong> SODIPROM</td>
-                <td><strong>Instituiçao:</strong> Amadeu Odorico de Sousa</td>
-                <td><strong>Instituiçao:</strong> Microcamp Diadema</td>
-            </tr>
+                <div class="info">
+                    <strong>Instituiçao:</strong>
+                    <p>SODIPROM</p>
+                    <strong>Data:</strong>
+                    <p>08/2013 a 12/2013</p>
+                </div>
+            </div>
 
-            <tr>
-                <td><strong>Data:</strong> 03/2017 até 07/2019</td>
-                <td><strong>Data:</strong> 08/2013 a 12/2013</td>
-                <td><strong>Data:</strong> 02/2008 até 12/2015</td>
-                <td><strong>Data:</strong> 03/2012 até 12/2013</td>
-            </tr>
-        </table>
+            <div class="box">
+                <h2>Ensino médio</h2>
+    
+                <div class="info">
+                    <strong>Instituiçao:</strong>
+                    <p>Amadeu Odorico de Sousa</p>
+                    <strong>Data:</strong>
+                    <p>02/2008 até 12/2015</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Inglês intermediário</h2>
+    
+                <div class="info">
+                    <strong>Instituiçao:</strong>
+                    <p>Microcamp Diadema</p>
+                    <strong>Data:</strong>
+                    <p>03/2012 até 12/2013</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <h2>Cursos complementares - Microcamp</h2>
+    <h2 id="microcamp">Cursos complementares - Microcamp</h2>
 
     <section>
 
-        <table>
-            <tr>
-                <th>Web Design</th>
-                <th>Espanhol basíco</th>
-                <th>Criação de Jogos</th>
-            </tr>
+        <div id="microcamp-courses" class="box-container">
+            <div class="box">
+                <h2>Web Design</h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>HTML, Adobe Photoshop, Adobe premiere</p>
+                    <strong>Data:</strong>
+                    <p>10/2014 até 11/2014</p>
+                </div>
+            </div>
 
-            <tr>
-                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
-                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
-                <td><strong>Data:</strong> 10/2014 até 11/2014</td>
-            </tr>
-        </table>
+            <div class="box">
+                <h2>Espanhol</h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>Fala e escrita basicas, verbos, pronunciação</p>
+                    <strong>Data:</strong>
+                    <p>10/2014 até 11/2014</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Criação de jogos</h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>Game maker, Javascript, adobe premiere</p>
+                    <strong>Data:</strong>
+                    <p>10/2014 até 11/2014</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
-    <h2>Sololearn</h2>
+    <h2 id="solo">Sololearn</h2>
 
     <section>
-        <table>
-            <tr>
-                <th>Curso tutorial Javascript </th>
-                <th>Curso de Python</th>
-                <th>Tutorial PHP</th>
-                <th>Tutorial SQL</th>
-            </tr>
+        <div id="sololearn-courses" class="box-container">
+            <div class="box">
+                <h2><a href="https://www.sololearn.com/Certificate/1024-12356248/pdf/" target="_blank">JavaScript Tutorial</a></h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>intermediário, Introdução ao Javascript, DOM, ES6</p>
+                    <strong>formação:</strong>
+                    <p>29/04/2019</p>
+                </div>
+            </div>
 
-            <tr>
-                <td><strong>formação:</strong> 29/04/2019</td>
-                <td><strong>formação:</strong> 10/03/2019</td>
-                <td><strong>formação:</strong> 29/03/2019</td>
-                <td><strong>formação:</strong> 24/04/2019</td>
-            </tr>
-        </table>
+            <div class="box">
+                <h2><a href="https://www.sololearn.com/Certificate/1073-12356248/pdf/" target="_blank">Python 3 tutorial</a></h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>intermediário, Introdução ao python, POO, Estrutura de dados, programação funcional</p>
+                    <strong>formação:</strong>
+                    <p>10/03/2019</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2><a href="https://www.sololearn.com/Certificate/1059-12356248/pdf/" target="_blank">Tutorial PHP</a></h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>intermediário, Introdução ao PHP, POO, Estrutura de dados, variaveis Predefinidas</p>
+                    <strong>formação:</strong>
+                    <p>29/03/2019</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2><a href="https://www.sololearn.com/Certificate/1060-12356248/pdf/" target="_blank">SQL Fundamentals</a></h2>
+    
+                <div class="info">
+                    <strong>Conteúdo:</strong>
+                    <p>Basico-intermediário, Introdução ao MySql, comandos SQL, functions</p>
+                    <strong>formação:</strong>
+                    <p>24/04/2019</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
+
+    <script src="{{url_for('static', filename='../static/js/script.js')}}"></script>
 {% endblock%}
