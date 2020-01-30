@@ -38,6 +38,7 @@ h2#microcamp, h2#solo{
 
 h2#solo:hover, h2#microcamp:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 h2 a {

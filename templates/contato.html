@@ -2,6 +2,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="{{url_for('static', filename='../static/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/contact.css')}}">
 {% endblock %}
 
 {% block headtitle %}
@@ -10,7 +11,20 @@
 
 {% block body %}
     <header class="name">
-        <h1>Contatos</h1>
+        <h1>Contato</h1>
     </header>
+
+    <form action="#" method="post">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto">
+        
+        <label for="conteudo">Conteudo</label>
+        <textarea name="conteudo" id="conteudo" cols="30" rows="10"></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+    </form>
 
 {% endblock%}
