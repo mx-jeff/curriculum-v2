@@ -23,7 +23,7 @@ data_atual = date.today()
 @app.route('/')
 @app.route('/home')
 def init():
-    return render_template('index.html', data={'idade': data_atual.year - 1997 })
+    return render_template('index.html', data={'idade': data_atual.year - 1998 })
 
 
 @app.route('/estudos')
