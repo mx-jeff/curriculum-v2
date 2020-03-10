@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/projects.css')}}">
+{% endblock %}
+
+{% block headtitle %}
+    Curriculum
+{% endblock%}
+
+{% block body %}
+    <header class="name">
+        <h1>Projetos</h1>
+    </header>
+
+    <section class="box-container">
+        <div class="projects-list">
+            {% for valor in data %}       
+                <a class="projects-container" target="_blank" href="{{ valor.html_url }}">
+                    <strong>{{ valor.name }}</strong>
+                    <p>{{ valor.description }}</p>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock%}

@@ -1,7 +1,8 @@
 from flask import Flask, redirect, url_for, render_template, request
 from flask_mail import Mail,Message
 from datetime import date
-
+import requests
+import json
 
 app = Flask(__name__)
 
@@ -36,9 +37,12 @@ def jobs():
     return render_template('profissional.html')
 
 
-@app.route('/redes_sociais')
-def social():
-    return render_template('social.html')
+@app.route('/projetos')
+def projetos():
+    github = requests.get('https://api.github.com/users/DZ0Jeff/repos')    
+    projects = github.json()
+
+    return render_template('projetos.html', data=projects)
 
 
 @app.route('/chat', methods=["POST","GET"])
