@@ -12,12 +12,23 @@
     
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+    background: var(--bg-secondary);
+    font-family: var(--font-secondary);
+    width: 98vw;
+    height: 100vh;
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 
 #microcamp-courses {
@@ -50,23 +61,17 @@ h2 a:hover {
     text-decoration: none;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-    background: var(--bg-secondary);
-    font-family: var(--font-secondary);
-}
-
 nav{
-    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
     background: var(--bg-primary);
-    padding: 10px 5px;
+    min-height: 10vh;
+    padding: 2rem;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
 }
 
 nav ul li{
@@ -88,7 +93,7 @@ nav ul li a:hover {
 /*Header title*/
 
 .name {
-    width: calc(100% - 50px);
+    width: 100vw;
     box-sizing: border-box;
     margin: 0 auto;
     color: black;
@@ -176,4 +181,37 @@ section article p {
 .box-container .box .info a:hover {
     text-decoration: underline;
     color: white;
+}
+
+/*Footer*/
+footer {
+    position: relative;
+    box-sizing: border-box;
+    top: 12vh;
+    background-color: var(--bg-primary);
+    width: 100vw;
+    height: 20vh;
+
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social {
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 920px){
+    footer {
+        padding: 1rem;
+    }
+
+    footer .social {
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+    }
 }

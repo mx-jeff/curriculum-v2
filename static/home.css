@@ -1,12 +1,30 @@
 div.btn-list{
     text-align: center;
+    width: 98vw;
+    min-height: 13vh;
+}
+
+@media (max-width: 720px){
+    div.btn-list{
+        text-align: center;
+        min-height: 13vh;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 4rem;
+    }
+
+    a.btn {
+        margin-top: 1rem;
+    }
 }
 
 div.btn-list a.btn{
     color: white;
     text-decoration: none;
-    margin-left: 40px;
-    padding: 15px 30px;
+    
+    padding: 1rem 2rem;
     border: none;
     background-color: #333333;
     border-radius: 5em;
