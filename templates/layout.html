@@ -10,7 +10,9 @@
     </head>
     <body>
         {% include 'includes/navbar.html' %}
-        {% block body %}{% endblock%}
-        {% include 'includes/footer.html' %}
+        <div class="content">
+            {% block body %}{% endblock%}
+            {% include 'includes/footer.html' %}
+        </div>
     </body>
 </html>

@@ -12,16 +12,24 @@
     
 }
 
-body{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+}
+
+body{
     color: white;
     outline: none;
     background: var(--bg-secondary);
     font-family: var(--font-secondary);
-    width: 98vw;
-    height: 100vh;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.content {
+    /* height: 150vh; */
 }
 
 section {
@@ -62,10 +70,10 @@ h2 a:hover {
 }
 
 nav{
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     background: var(--bg-primary);
-    min-height: 10vh;
+    /* min-height: 10vh; */
     padding: 2rem;
 }
 
@@ -93,11 +101,10 @@ nav ul li a:hover {
 /*Header title*/
 
 .name {
-    width: 100vw;
-    box-sizing: border-box;
+    width: 100%;
     margin: 0 auto;
     color: black;
-    padding: 15px 30px;
+    padding: 3rem 0;
 }
 
 .name h1{
@@ -187,9 +194,10 @@ section article p {
 footer {
     position: relative;
     box-sizing: border-box;
-    top: 12vh;
+    top: 13vh;
+
     background-color: var(--bg-primary);
-    width: 100vw;
+    width: 100%;
     height: 20vh;
 
     padding: 1rem 5rem;

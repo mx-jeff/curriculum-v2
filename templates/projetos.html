@@ -17,11 +17,24 @@
     <section class="box-container">
         <div class="projects-list">
             {% for valor in data %}       
-                <a class="projects-container" target="_blank" href="{{ valor.html_url }}">
-                    <strong>{{ valor.name }}</strong>
-                    <p>{{ valor.description }}</p>
-                </a>
+                {% if valor.homepage %}
+                    <a class="projects-container" target="_blank" href="{{ valor.homepage }}">
+                        <strong>{{ valor.name }}</strong>
+                        <p>{{ valor.description }}</p>
+                        <!-- <p>{{ valor.homepage }}</p> -->
+                    </a>
+                {% endif %}
             {% endfor %}
+
+            <!-- <a class="projects-container" target="_blank" href="https://www.servc.com.br">
+                <strong> Servc </strong>
+                <p>Emprestimos consignados</p>
+            </a> -->
+
+            <a class="projects-container" target="_blank" href="https://www.seletauno.com.br">
+                <strong> Seleta Uno </strong>
+                <p> E-commerce </p>
+            </a>
         </div>
     </section>
 {% endblock%}
